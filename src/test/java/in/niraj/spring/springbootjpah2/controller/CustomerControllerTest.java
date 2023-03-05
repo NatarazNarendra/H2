@@ -36,7 +36,7 @@ public class CustomerControllerTest {
 	}
 
 	@Test
-	public void shouldReturnListOfTutorials() throws Exception {
+	public void test1() throws Exception {
 		List<Customers> tutorials = new ArrayList<>(Arrays.asList(new Customers((long) 1, "narendra ", "HYD")));
 		when(customerRepo.findAll()).thenReturn(tutorials);
 		this.mockMvc.perform(get("/api/customers")).andDo(print()).andExpect(status().isOk());

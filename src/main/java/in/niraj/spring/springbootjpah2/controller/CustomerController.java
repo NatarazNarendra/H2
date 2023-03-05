@@ -27,7 +27,7 @@ public class CustomerController {
 	@Autowired
 	ICustomerRepo customerRepo;
 
-	@PostMapping(value = "/customers", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/customers")
 	// @ReteLimiter(name="emailratelimiter")
 	// @RateLimiter("R")
 	public ResponseEntity<Customers> saveCustomer(@RequestBody Customers customer) {

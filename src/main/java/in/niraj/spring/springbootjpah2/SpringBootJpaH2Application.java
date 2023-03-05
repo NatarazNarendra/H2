@@ -25,3 +25,4 @@ public class SpringBootJpaH2Application {
 //http://localhost:8080/swagger-ui.html
 //https://www.bezkoder.com/spring-boot-controlleradvice-exceptionhandler/
 //https://www.bezkoder.com/spring-boot-webmvctest/
+//https://bushansirgur.in/spring-boot-hibernate-jpa-and-h2-database-crud-rest-api-example/
