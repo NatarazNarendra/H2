@@ -96,8 +96,12 @@ public class CustomerController {
 	 * 
 	 * return new ResponseEntity<>(tutorial, HttpStatus.OK); }
 	 */
-
-	
+    @GetMapping("/all")
+	  @ResponseStatus(HttpStatus.OK)
+	  //  @ApiOperation(value = "Execute GET method")
+	    public ResponseEntity<List<Customers>> listAllUsers_whenGetUsers() {
+	        return ResponseEntity.ok().body(customerRepo.findAll());
+	    }
 	
 	
 }
